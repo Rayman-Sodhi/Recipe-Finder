@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>World Recipe Finder</title>
+  </head>
+
+  <body class="bg-dark">
+    <div class="container bg-primary p-4 text-white h1">
+      <form class="form-inline my-2">
+        <div class="w-100">
+          <label class="col-form-label" for="inputDefault">World Recipe Finder</label>
+        </div>
+        <div class="w-100 text-center">
+          <input id="searchField" class="form-control w-75 mb-3 mx-auto" type="text" placeholder="Search Recipe" autocomplete="off" />
+        </div>
+      </form>
+      <div id="displaySuggestions" class="container text-center text-white mt-2"></div>
+    </div>
+    <div id="displayResult" class="container bg-primary text-center text-white mt-2"></div>
+    <div id="saveFavoritesDiv" class="bg-primary">
+      <span class="border-bottom border-white pb-2 pt-4 w-75 h3 mx-auto text-white">Your Saved Recipes</span>
+      <div class="saveRecipes"></div>
+    </div>
+    <div class="showSavedRecipes">
+      <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path
+          fill-rule="evenodd"
+          d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+        />
+      </svg>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!-- saveFavoritesDiv.innerHTML = `
+<div class="text-white w-75 p-3 mt-4 border border-gray mx-auto rounded-pill">${saveRecipe.join("")}
+</div>`; -->

@@ -1,0 +1,129 @@
+body,
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  text-align: center !important;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+#instruction {
+  max-width: 700px !important;
+}
+
+#displayResult {
+  border: 1px solid rgb(255, 255, 255);
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#displayResult > img {
+  border: 4px solid rgb(255, 255, 255);
+}
+
+#displayResult > table {
+  max-width: 500px;
+}
+
+#displayResult > p {
+  line-height: 1.6em;
+  max-width: 1000px;
+}
+
+.hidden {
+  display: none;
+}
+
+link {
+  display: inline !important;
+}
+
+.source {
+  display: flex;
+  align-self: auto;
+  margin: 20px auto;
+}
+
+#saveFavoritesDiv {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  margin: 10px auto;
+  height: 500px;
+  min-width: 365px;
+  z-index: 2;
+  transition: height 0.5s ease-in-out;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 2%;
+  color: rgb(255, 255, 255);
+  overflow: auto;
+  scrollbar-width: thin;
+}
+.show {
+  display: flex !important;
+  right: 2% !important;
+  bottom: 8% !important;
+}
+
+.recipeContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 0 10px;
+  margin: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50px;
+}
+.savedRecipe {
+  border: 0;
+  font-size: 1rem;
+  margin: 10px 0px;
+  background: none;
+  color: #fff;
+  width: 300px;
+  cursor: pointer;
+}
+
+.savedRecipe:hover,
+.savedrecipe:focus {
+  color: rgb(226, 226, 226) !important;
+}
+.removeRecipes {
+  color: rgb(228, 128, 128) !important;
+  cursor: pointer;
+  align-self: center;
+  height: auto;
+  padding-left: 10px;
+  height: 100%;
+  border-left: 1px solid rgb(255, 255, 255);
+}
+
+.showSavedRecipes {
+  display: block;
+  position: fixed;
+  background-color: #fff;
+  font-size: 0.8rem;
+  color: #000000;
+  margin: 30px;
+  padding: 0.65rem 1.1rem;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  cursor: pointer;
+  user-select: none; /* Standard */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  border-radius: 50px;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.326), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.showSavedRecipes:hover,
+.showSavedRecipes:focus {
+  color: #ff0000;
+}
